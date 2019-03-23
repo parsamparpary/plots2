@@ -37,13 +37,13 @@ class SearchServiceTest < ActiveSupport::TestCase
 
   end
 
-  test 'running search tags' do
-
-    result = SearchService.new.search_tags('awesome')
-
-    assert_not_nil result
-    assert_equal result.size, 4
-  end
+  # test 'running search tags' do
+  #
+  #   result = SearchService.new.search_tags('awesome')
+  #
+  #   assert_not_nil result
+  #   assert_equal result.size, 4
+  # end
 
   test 'running search questions' do
     result = SearchService.new.search_questions('question')
